@@ -1,0 +1,34 @@
+
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'de.testo.datalayersample_java'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "de.testo.datalayersample_java"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation files('libs/datalayer-release.aar')
+    implementation 'com.android.support:support-v4:28.0.0'
+}

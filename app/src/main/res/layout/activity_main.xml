@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Scrollable TextView -->
+            <TextView
+                android:id="@+id/text"
+                android:gravity="bottom"
+                android:scrollbarStyle="insideOverlay"
+                android:layout_width="match_parent"
+                android:height="1000px"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:scrollbars="vertical"
+                android:text="bereit\n"
+                android:textSize="18sp" />
+
+        </ScrollView>
+        <!-- Buttons at the bottom -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDiscover"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="discover" />
+
+            <Button
+                android:id="@+id/btnConnect"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="connect" />
+
+            <Button
+                android:id="@+id/btnBattery"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="battery level" />
+
+            <Button
+                android:id="@+id/btnDisconnect"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="Disconnect" />
+            </LinearLayout>
+        </LinearLayout>
+
+</RelativeLayout>
